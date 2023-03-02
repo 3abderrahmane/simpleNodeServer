@@ -3,7 +3,7 @@ var http = require('http');
 var fs = require('fs');
 
 http.createServer(function (req, res) {
-  if (req.url === '/simpleNodeServer/'){
+  if (req.url === '/simpleNodeServer'){
     console.log(req.url);
      fs.readFile('index.html', function(err, data) {
         if (err) {
